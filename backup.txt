@@ -1,0 +1,2 @@
+figlet -c -f slant "Welcome To" | lolcat
+figlet -c -f slant "Apple Silicon" | lolcat
