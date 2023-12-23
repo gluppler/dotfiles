@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
     use('theprimeagen/refactoring.nvim')
     use('mbbill/undotree')
     use('nvim-treesitter/nvim-treesitter-context')
+    use('tpope/vim-fugitive')
 
     use({
         "folke/trouble.nvim",
@@ -60,7 +61,12 @@ return require('packer').startup(function(use)
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' },     -- Required
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' },     -- Required
+            { 'L3MON4D3/LuaSnip' },-- Required
+            { 'hrsh7th/cmp-buffer' }, --Optional
+            { 'hrsh7th/cmp-path' }, --Optional
+            { 'hrsh7th/cmp-nvim-lua' }, --Optional
+            { 'saadparwaiz1/cmp_luasnip' }, --Optional
+            { 'rafamadriz/friendly-snippets' }, --Optional
         }
     })
 
