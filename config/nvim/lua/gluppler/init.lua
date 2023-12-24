@@ -1,8 +1,9 @@
 require("gluppler.set")
 require("gluppler.remap")
 
+
 local augroup = vim.api.nvim_create_augroup
-local TheGlupplerGroup = augroup('Gluppler', {})
+local GlupplerGroup = augroup('Gluppler', {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
@@ -23,7 +24,7 @@ autocmd('TextYankPost', {
 })
 
 autocmd({"BufWritePre"}, {
-    group = TheGlupplerGroup,
+    group = GlupplerGroup,
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
